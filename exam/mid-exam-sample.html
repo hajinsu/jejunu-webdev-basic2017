@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>2017년 기초웹개발론 중간고사</title>
+  <style>
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .profile {
+    border: 5px solid #eee;
+    padding: 20px;
+    position: relative;
+  }
+  .profile .top {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .top h3 {
+    margin: 0 0 10px;
+  }
+  .top span {
+    color: #888;
+  }
+  .manage_btn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 1em;
+    color: #3B72FF;
+    border: 1px solid #3B72FF;
+    background-color: transparent;
+    border-radius: 1em;
+    padding: 0.2em 0.7em;
+  }
+  .detail img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    float: left;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .detail table {
+    border: 0;
+  }
+  .detail table th {
+    font-weight: normal;
+    text-align: left;
+    width: 100px;
+    color: #888;
+  }
+  .detail table th, .detail table td {
+    padding: 2px 0;
+  }
+  .detail .modify_cell {
+    color: inherit;
+  }
+  .detail .modify_cell:hover {
+    font-weight: 700;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="top">
+        <h3>darby.ha (하진수)</h3>
+        <span>카카오 | darby.ha@kakaocorp.com</span>
+        <button type="button" class="manage_btn">프로필 관리</button>
+      </div>
+      <div class="detail">
+        <img class="avata" src="https://img1.daumcdn.net/thumb/R300x300/?fname=http%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FFRPBRYBCU0001_A_000.jpg">
+        <table>
+          <tr>
+            <th>회사</th>
+            <td>카카오</td>
+          </tr>
+          <tr>
+            <th>소속</th>
+            <td>카카오파머 TF</td>
+          </tr>
+          <tr>
+            <th>생일</th>
+            <td>3월 22일</td>
+          </tr>
+          <tr>
+            <th>자리위치</th>
+            <td>제주</td>
+          </tr>
+          <tr>
+            <th>자기소개</th>
+            <td>기초웹개발론 강의를 맡고 있습니다</td>
+          </tr>
+          <tr>
+            <th>휴대폰</th>
+            <td>010-4661-3397 <a href="#" class="modify_cell">수정하기</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
