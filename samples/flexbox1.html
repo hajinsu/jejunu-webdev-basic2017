@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+  <title>Flexbox test1</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  #container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav > ul li {
+    width: 33.33%;
+    float: left;
+    border: 1px solid #555;
+  }
+  nav > ul li:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+  }
+  nav > ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+  nav > ul li a:link {
+    color: #000;
+    text-decoration: none;
+  }
+  nav > ul li a:hover {
+    background-color: #ccc;
+  }
+
+  footer {
+    background-color: orange;
+    padding: 5px;
+  }
+
+  .content h2 {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+  }
+
+  aside ol {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+  aside ol li {
+    margin: 5px 0;
+  }
+
+  .main {
+    clear: both;
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .main .content {
+    flex: 1 1 0;
+    padding-right: 15px;
+  }
+  .main aside {
+    width: 300px;
+    border-left: 1px solid #999;
+    padding-left: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h2>미디어다음</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">메뉴1</a>
+          </li>
+          <li>
+            <a href="#">메뉴2</a>
+          </li>
+          <li>
+            <a href="#">메뉴3</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <section class="content">
+        <h2>[단독] 김관진 "사이버사 댓글부대 운용, MB 지시 받았다"</h2>
+        <p>
+          이명박 전 대통령은 과연 검찰의 수사선상에 오를 것인가…가늠하긴 지금으로써는 어렵지만, 수사선 앞으로 한 걸음 더 다가선 것은 맞습니다. 1박2일 동안 뉴스를 만들어내고 떠난 트럼프 미 대통령 관련 소식이 아닌 이 소식을 첫머리에 올리는 이유가 있습니다. 군 사이버사령부의 정치 개입에 이명박 전 대통령의 직접 개입이 있었다는 첫 진술이 나왔습니다. 어제(7일) 검찰에 소환된 김관진 전 국방부장관은 사이버사령부의 댓글 부대 운용과 관련해 이명박 전 대통령의 지시를 받았다고 진술한 것으로 JTBC 취재 결과 확인됐습니다. 검찰은 오늘 김 전 장관에 대해 구속영장을 청구했습니다.
+        </p>
+        <p>
+          특히 김 전 장관은 19대 대선을 앞두고 이뤄진 사이버사 요원 증편을 이 전 대통령이 지시했다고 인정했습니다. 70여 명을 뽑는 과정에서 이른바 호남 출신을 배제할 때도 "우리편을 뽑으라"는 대통령의 지시가 있었다는 겁니다. 검찰이 '대선 댓글 수사' 과정에서 이명박 전 대통령의 지시가 있었다는 진술을 확보한 건 처음입니다. 이 전 대통령 직접 조사를 향한 교두보가 마련됐다는 분석이 나옵니다.
+        </p>
+        <p>
+          먼저 심수미 기자의 단독 보도입니다.
+        </p>
+      </section>
+      <aside>
+        <h3>많이 본 뉴스</h3>
+        <ol>
+          <li>
+            <a href="#">"따뜻한 느낌이 없다"..즉석에서 만찬사 수정한 트럼프</a>
+          </li>
+          <li>
+            <a href="#">"반려견 입마개 안 채웠다고 폭행당해" 20대 여성 경찰신고</a>
+          </li>
+          <li>
+            <a href="#">홍종학 "백종원 '더본코리아', 中企 지위 박탈 검토"</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
+    <footer>
+      <p>위 내용에 대한 저작권 및 법적 책임은 자료제공사 또는
+        글쓴이에 있으며, Kakao의 입장과 다를 수 있습니다.</p>
+        <p>Copyright © Kakao Corp. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+  </html>
